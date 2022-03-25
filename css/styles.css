@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+    background-color: rgb(178, 255, 251);
+    border: 2px solid rgb(184, 171, 253);
+    border-radius: 5px;
+    width: 70%;
+    margin: auto;
+    font-size: 50px;
+}
+
+#cuadrado{
+    background-color: red;
+    height: 40px;
+    width: 40px;
+}
