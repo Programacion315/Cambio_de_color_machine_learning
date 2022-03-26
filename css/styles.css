@@ -1,15 +1,77 @@
-h1{
-    text-align: center;
-    background-color: rgb(178, 255, 251);
-    border: 2px solid rgb(184, 171, 253);
-    border-radius: 5px;
-    width: 70%;
-    margin: auto;
-    font-size: 50px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#cuadrado{
-    background-color: red;
-    height: 40px;
-    width: 40px;
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: #222;
+    background:#222;
+    height: 100vh;
 }
+
+canvas{
+    margin-left: 80px;
+    border: 1px solid red;
+    position: relative;
+    right: -202px;
+}
+
+
+
+.bulb{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-color: #444;
+    border-radius: 50%;
+}
+
+.bulb::before{
+    
+    content: '';
+    position: absolute;
+    top:-50px;
+    left: 22.5px;
+    width: 35px;
+    height: 80px;
+    background-color: #444;
+    border-top: 30px solid #000;
+    border-radius: 10px;  
+}
+
+.bulb span:nth-child(1){
+    position: absolute;
+    top: -16px;
+    left: -4px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    transform: rotate(342deg);
+    border-bottom-right-radius: 40px;
+    box-shadow: 20px 20px 0 10px #444;
+}
+
+.bulb span:nth-child(2){
+    position: absolute;
+    top: -16px;
+    right: -5px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    transform: rotate(17deg);
+    border-bottom-left-radius: 40px;
+    box-shadow: -20px 20px 0 10px #444;
+}
+
+.bulb span{
+   
+}
+
+
+
