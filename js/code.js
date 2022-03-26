@@ -10,6 +10,11 @@
   // To store the classification
   let label = "";
 
+
+  //Variables del documento
+
+  let body = document.querySelector('body');
+  let audio = document.querySelector('#audio');
   // Load the model first
   function preload() {
     classifier = ml5.imageClassifier(imageModelURL + 'model.json');
@@ -44,6 +49,22 @@
   // When we get a result
   function gotResult(error, results) {
     // If there is an error
+
+    if(label == "Apagado"){
+
+      body.className = "off";
+      
+      
+      
+    }
+    else if(label == "Encencido"){ //En el modelo lo guarde como encencido jajaj
+      body.className = "on";
+      
+    }
+    else{
+      
+    }
+
     if (error) {
       console.error(error);
       return;
@@ -53,4 +74,23 @@
     label = results[0].label;
     // Classifiy again!
     classifyVideo();
+  }
+
+  //Lograr que esta funcion solo se ejecute una vez cuando se cambia de color!
+  //Idea, verificar la clase que tiene!
+  function sonido(){
+    if(label == "Apagado"){
+
+      body.className = "off";
+      
+      audio.play();
+      
+    }
+    else if(label == "Encencido"){ //En el modelo lo guarde como encencido jajaj
+      body.className = "on";
+      audio.play();
+    }
+    else{
+      
+    }
   }
