@@ -46,18 +46,28 @@
 
   }
 
+  let boleano = false;
+
   // When we get a result
   function gotResult(error, results) {
     // If there is an error
 
     if(label == "Apagado"){
 
+      if(body.className != "off"){
+        audio.play();
+      }
+
       body.className = "off";
-      
       
       
     }
     else if(label == "Encencido"){ //En el modelo lo guarde como encencido jajaj
+
+      if(body.className != "on"){
+        audio.play();
+      }
+
       body.className = "on";
       
     }
