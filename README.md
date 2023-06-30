@@ -1,9 +1,9 @@
-# Bombillo_machine_learning
-Prende y apaga el bombillo abriendo y cerrando la camara.
+#  Light bulb machine learngin 
+Turns the light bulb on and off when I open and close my hand.
 
 <img src="https://github.com/Programacion315/Bombillo_machine_learning/blob/master/readme/handTwo.gif">
 
-Lo realice creando un modelo en Teachable Machine, pase las librerias
+ I did this by making a Teachable Machine model.
 
 <img src="https://github.com/Programacion315/Bombillo_machine_learning/blob/master/readme/handOne.gif">
 
