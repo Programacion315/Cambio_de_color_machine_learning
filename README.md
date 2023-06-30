@@ -1,4 +1,4 @@
-#  Light bulb machine learngin 
+#  Light bulb machine learning 
 Turns the light bulb on and off when I open and close my hand.
 
 <img src="https://github.com/Programacion315/Bombillo_machine_learning/blob/master/readme/handTwo.gif">
